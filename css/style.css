@@ -48,17 +48,18 @@ a {
 	padding: 0;
 	white-space: nowrap;
 	overflow-x: auto;
+	flex: 01 auto;
+	order: 2;
+	display: flex;
+	justify-content: space-between;
 }
 
 .thumbnail-item {
 	border: 1px solid rgb(100%, 100%, 100%);
 	border: 1px solid rgba(100%, 100%, 100%, 0.8);
 	display: inline-block;
-	width: 120px;
-}
-
-.thumbnail-item + .thumbnail-item {
-	margin-top: 10px;
+	min-width: 120px;
+	max-width: 120px;
 }
 
 .thumbnail-image {
@@ -68,4 +69,25 @@ a {
 
 .detail-image {
 	width: 90%;
+}
+
+.main-header {
+	flex: 01 auto;
+}
+
+.main-content {
+	flex: 11 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.detail-image-container {
+	flex: 11 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.detail-image-frame {
+	text-align: center;
 }
